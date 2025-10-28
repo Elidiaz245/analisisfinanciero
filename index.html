@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis Financiero</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Análisis Financiero</h1>
+    <nav>
+      <button onclick="mostrarSeccion('balance')">Balance General</button>
+      <button onclick="mostrarSeccion('resultados')">Estado de Resultados</button>
+      <button onclick="mostrarSeccion('analisis')">Análisis</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Balance General -->
+    <section id="balance" class="seccion activa">
+      <h2>Balance General</h2>
+      <p>Ingrese los datos del balance general:</p>
+      <form>
+        <label>Activo Total:</label>
+        <input type="number" placeholder="Ejemplo: 100000"><br>
+        <label>Pasivo Total:</label>
+        <input type="number" placeholder="Ejemplo: 40000"><br>
+        <label>Capital Contable:</label>
+        <input type="number" placeholder="Ejemplo: 60000"><br>
+        <button type="button">Guardar</button>
+      </form>
+    </section>
+
+    <!-- Estado de Resultados -->
+    <section id="resultados" class="seccion">
+      <h2>Estado de Resultados</h2>
+      <p>Ingrese los datos del estado de resultados:</p>
+      <form>
+        <label>Ventas:</label>
+        <input type="number" placeholder="Ejemplo: 50000"><br>
+        <label>Costos:</label>
+        <input type="number" placeholder="Ejemplo: 30000"><br>
+        <label>Utilidad Neta:</label>
+        <input type="number" placeholder="Ejemplo: 12000"><br>
+        <button type="button">Guardar</button>
+      </form>
+    </section>
+
+    <!-- Análisis -->
+    <section id="analisis" class="seccion">
+      <h2>Resultados de Análisis</h2>
+      <p>Aquí aparecerán los resultados de los cálculos financieros más adelante.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto de análisis financiero © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
