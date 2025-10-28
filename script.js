@@ -1,6 +1,10 @@
-
 function mostrarSeccion(id) {
-  const secciones = document.querySelectorAll('.seccion');
-  secciones.forEach(sec => sec.classList.remove('activa'));
-  document.getElementById(id).classList.add('activa');
+  // Oculta todas las secciones
+  document.querySelectorAll('.seccion').forEach(sec => {
+    sec.classList.remove('activa');
+  });
+
+  // Muestra solo la sección seleccionada
+  const s = document.getElementById(id);
+  s.classList.add('activa');
 }
